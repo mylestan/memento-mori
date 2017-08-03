@@ -10,12 +10,9 @@ import {
 
 class MementoMoriApp extends Component {
   render() {
-    let graphic = {
-      uri: 'https://images.genius.com/058b6018520093618e4c4d249e31bc35.794x794x1.jpg'
-    };
     return (
       <View style={styles.splashContainer}>
-        <Image source={graphic} style={styles.graphic}/>
+        <Image source={require('./img/memento_mori.png')} />
         <View>
           <Text style={styles.aboutText}>Memento Mori is a latin expression which translates into "remember that you have to die", or more simply "remember death". It, as well as skull and bone imagery, have been used since Ancient Rome as a reminder of one's own mortality, and offer a reminder to contemplate this regularly.</Text>
           <Text style={styles.aboutText}>You can learn more about the origins of the phrase here: https://en.wikipedia.org/wiki/Memento_mori</Text>
